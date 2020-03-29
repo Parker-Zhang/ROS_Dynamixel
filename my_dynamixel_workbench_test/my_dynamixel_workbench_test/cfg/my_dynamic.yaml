@@ -1,0 +1,27 @@
+!!python/object/new:dynamic_reconfigure.encoding.Config
+dictitems:
+  angular_z: 3.0
+  cmd_pub_rate: 4
+  cmd_topic: turtle1/cmd_vel
+  groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+    dictitems:
+      angular_z: 1.8
+      cmd_pub_rate: 4
+      cmd_topic: turtle1/cmd_vel
+      groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      id: 0
+      linear_x: 2.0
+      log_level: 0
+      move_flag: true
+      name: Default
+      parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      parent: 0
+      state: true
+      type: ''
+    state: []
+  linear_x: 3.0
+  log_level: 1
+  move_flag: true
+state: []

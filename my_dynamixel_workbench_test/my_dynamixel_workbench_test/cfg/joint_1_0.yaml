@@ -1,0 +1,19 @@
+# You can find control table of Dynamixel on emanual (http://emanual.robotis.com/#control-table)
+# Control table item has to be set Camel_Case and not included whitespace
+# You are supposed to set at least Dynamixel ID
+# This example is compatible with Dynamixel using protocol 2.0
+#Operating Mode 0 currentControlMode 3(Default)Position Control Mode
+zero:
+  ID: 0
+  Operating_Mode: 0
+  Min_Position_Limit: 0
+  Max_Position_Limit: 4095
+  Current_Limit: 50
+first:
+  ID: 1
+  Operating_Mode: 3
+  Goal_Position: 1800
+  Torque_Enable: 1
+
+second:
+  ID: 2

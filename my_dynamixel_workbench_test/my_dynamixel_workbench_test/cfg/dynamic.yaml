@@ -1,0 +1,5 @@
+cmd_topic: turtle1/cmd_vel
+loop_rate: 2
+linear_x: 2.0
+angular_z: 2.0
+move_flag: true

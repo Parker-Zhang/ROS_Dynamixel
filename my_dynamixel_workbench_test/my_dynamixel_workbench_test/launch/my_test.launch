@@ -1,0 +1,10 @@
+<launch>
+    <arg name="usb_port"    default="/dev/ttyUSB0"/>
+    <arg name="dxl_baud_rate"   default="57600"/>    
+
+    <param name="dynamixel_info"    value="$(find my_dynamixel_workbench_test)/cfg/joint_1_0.yaml"/>
+
+    <node name="my_dxl_master" pkg="my_dynamixel_workbench_test" type="my_dxl_master" 
+            output="screen"    args="$(arg usb_port) $(arg dxl_baud_rate)" >
+    </node>
+</launch>
