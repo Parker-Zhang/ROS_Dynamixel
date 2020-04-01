@@ -1,0 +1,61 @@
+01:
+goal_pos:1000
+kp=0.05 ki=0 kd=0;
+point:100 to 250 
+goal_pos:1000
+kp=0.05 ki=0 kd=0.05;
+还是有轻微的震荡，应该减小k值
+
+
+02:
+kp=0.06 ki=0.001 kd=0.1
+goal_pos =1000
+数据有些不平滑，存在二阶跳的情况
+goal_pos = 0;
+kp=0.06 ki=0.0015 kd=0.1
+goal_pos = 1000;
+超调明显增多，并且阶梯下降
+从1300个点到最后
+
+
+03:写速度 0.01 读速度0.01
+return zero;
+kp=0.05 ki=0 kd=0;
+goal_pos:500
+有较大的超调
+goal_pos:0
+kp=0.05 ki=0 kd=0.05;
+goal_pos:500
+超调明显减小
+kp=0.05 ki=0 kd=0.07;
+goal_pos:0
+goal_pos:500
+超调进一步减小，有略微震荡
+kp=0.05 ki=0.001 kd=0.07;
+goal_pos:0
+goal_pos:500
+稳态误差减小的慢，存在超调
+goal_pos:0
+kp=0.06 ki=0.001 kd=0.1;有震荡
+goal_pos:500
+存在三个波峰的震荡
+
+
+04:设定pid时清零误差
+goal_pos:500
+goal_pos:0
+kp=0.06 ki=0.001 kd=0.1;
+goal_pos:500
+goal_pos:0
+kp=0.03 ki=0.001 kd=0.1;
+goal_pos:500
+kp=0.05 ki=0.001 kd=0.1;
+goal_pos:0
+图像显示不行
+
+05：
+
+
+
+
+
